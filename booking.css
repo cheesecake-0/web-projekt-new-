@@ -1,0 +1,187 @@
+.background{
+    color: beige;
+    height: 10rem;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.picture{
+    height: 40rem;
+    width: 100%;
+}
+.parent-box{
+    height: 60rem;
+    width: 100%;
+    background-color:#042e43;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+}
+.mainparagraf{
+    color: beige;
+    padding-left: 2rem;
+}
+.header{
+    color: beige;
+    padding-left: 2rem;
+}
+.item-holder{
+    background-color:#042e43;
+    width: 80rem;
+    height: 35rem;
+    border: 5px solid #042e43;
+    border-top-right-radius: 50px;
+    border-top-left-radius:50px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    display: flex;
+}
+.headitem{
+    height: 5rem;
+    width: 100%;
+
+}
+body{
+    margin: 0px;
+    background-color: #042e43;
+}
+.parentforbtn{
+    display: flex;
+    height: 30rem;
+    width: 80rem;
+    flex-wrap: wrap;
+}
+.Routes{
+    margin-left: 50px;
+    height: 3rem;
+    width: 14rem;
+    border-radius: 5px;
+    color: beige;
+    background-color: #053e54;
+    border: 3px solid #094e71;
+}
+.plan{
+    margin-top: 1rem;
+    background-color: #053e54;
+    margin-left: 50px;
+    height: 3rem;
+    width: 14rem;
+    border-radius: 5px;
+    color: beige;
+    border: 3px solid #094e71;
+}
+.submitbtn{
+    align-self: flex-start;
+    width: 25rem;
+    height: 3rem;
+    border-radius: 5px;
+    color: beige;
+    
+}
+.submit{
+    background-color: #053a54;
+    border: 3px solid #094e71;
+    width: 25rem;
+    height: 3rem;
+    color: beige;
+    border-radius: 5px;
+    align-self: center;
+}
+.phone{
+    background-color: #053e54;
+    margin-left: 50px;
+    height: 3rem;
+    width: 14rem;
+    border-radius: 5px;
+    color: beige;
+    border: 3px solid #094e71;
+
+}
+.email{
+    margin-top: 1rem;
+    background-color: #053e54;
+    margin-left: 50px;
+    height: 3rem;
+    width: 15rem;
+    border-radius: 5px;
+    color: beige;
+    border: 3px solid #094e71;
+}
+.date{
+    background-color: #053e54;
+    margin-left: 50px;
+    height: 3rem;
+    width: 15rem;
+    border-radius: 5px;
+    color: beige;
+    border: 3px solid #094e71;
+}
+.datetext{
+    color: beige;
+    margin-top: 1rem;
+    margin-bottom: 10px;
+    margin-left: 2rem
+}
+.routesplandatebox{
+    display: flex;
+    flex-direction: column;
+    
+}
+.emailtel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-start;
+}
+.form{
+    display: flex;
+    height: 33rem;
+    width: 80rem;
+    margin-bottom: 2rem;
+}
+#navbar{
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.356);
+    width: 100%;
+    z-index: 999;
+}
+
+#navbar a li{
+list-style: none;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding:  10px 10px;
+    text-decoration:none;
+    font-size: 17px;
+  }
+
+  #navbar a:hover {
+    background-color: #dddddd69;
+    color: black;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  #navbar a.active {
+    background-color: #6ea9e5;
+    color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+  }
+  footer {
+    text-align: center;
+    background: #042e43;
+    color: #E2DFD2;
+    padding: 20px 0;
+    margin-top: 60px;
+    font-size: 1rem;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="booking.css">
+    <script>
+        function Createbooking(){
+            alert("A response will be sent to " + document.getElementById("emailid").value);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <ul>
+                <a class="active" href="mainpage.html"><li>Home</li></a>
+                <a href="destination.html"><li>Routes</li></a>
+                <a href="car.html"><li>Career</li></a>
+                <a href="fac.html"><li>Facilities</li></a>
+                <a href="booking.html"><li>Booking</li></a>
+                <a href="Act.html"><li>Activites</li></a>
+            </ul>
+
+
+        </nav>
+    </header>
+    <div class="background">
+
+        <img class="picture" src="0ID0asEl.jpg"></div>
+
+        <div class="parent-box">
+                <div class="item-holder">
+
+                    <div class="headitem">
+
+                        <h1 class="header">Aquatic ride</h1>
+
+                        <p class="mainparagraf">This page is used for booking your cruise</p>
+
+                        <div class="parentforbtn">
+                           <div class="form">
+                                <div class="routesplandatebox">
+                                <label for="Routes"></label>
+                                <select name="Routes" class="Routes">
+                                    <option selected="select">
+                                        Choose a Route
+                                    </option>
+                                    <option value="Premium Route">Premium Route</option>
+                                    <option value="Northern Route">Northern Route</option>
+                                    <option value="Southern Route">Southern Route</option>
+                                    </select>
+                                
+                            
+                                 <label for="Plan"></label>
+                                    <select name="Plan" class="plan">
+                                    <option selected="select">
+                                        Choose a Room
+                                    </option>
+                                    <option value="Economy: solo (Budget-Friendly)">Economy: solo (Budget-Friendly)</option>
+                                    <option value="Luxury Suite: Solo  (Premium Option)">Luxury Suite: Solo  (Premium Option)</option>
+                                    <option value="Economy: couple (Moderate Comfort)">Economy: couple (Moderate Comfort)</option>
+                                    <option value="Luxury Suite: Couple  (Premium Experience)">Luxury Suite: Couple  (Premium Experience)</option>
+                                    <option value="Economy: Family (Mid-Range Comfort)">Economy: Family (Mid-Range Comfort)</option>
+                                    <option value="Luxury Suite: Family  (High-End Option)">Luxury Suite: Family  (High-End Option)</option>
+                                    </select>
+
+                                    <label for="Date" class="datetext">Please enter the date you would like to have.<br> We will contact you with the closest date available.<br></label>
+                                    <input type="date" class="date" name="date">
+                                    
+                                    </div>
+                                    
+
+                                 <div class="emailtel">
+                                <label for="phone"></label>
+                                <input type="tel" class="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+                            
+                            
+                                <label for="email"></label>
+                                <input type="email" class="email" id="emailid" name="email" placeholder="Firstname.lastname@example.com">
+                                </div>
+                        
+                            <hr>
+                                <div class="submitbtn">
+                                    <p class="paragraf">By pressing this submit button it will send the information to a cloud where we pick it up and set you up for our Cruise.<br> You will be notified later on.<hr>Your payment will be settled on a later date on your email address.</p>
+                                 <button class="submit" onclick="Createbooking()";>Submit</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    </div>
+    <footer class="footer">
+        <p>&copy;2025 aquatic ride. All Rights Reserved.</p>
+        <p> Costiomer service:</p>
+        <p>+46123456789</p>
+        <p>customer-service@aquatic-ride.com</p>
+    </footer> 
+</body>
+</html>
