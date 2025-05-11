@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cruise Ship Job Application</title>
+  <link rel="stylesheet" href="join.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Job Application</h1>
+    <form autocomplete="on" id="applicationForm">
+      <!-- Personal Information -->
+      <fieldset>
+        <legend>1. Personal Information</legend>
+        <label>Full Name:
+          <input type="text" name="full_name" autocomplete="name" required>
+        </label>
+        <label>Email Address:
+          <input type="email" name="email" autocomplete="email" required>
+        </label>
+        <label>Age:
+          <input type="number" name="age" min="18" required>
+        </label>
+        <label>Current Occupation:
+          <input type="text" name="occupation" autocomplete="organization">
+        </label>
+      </fieldset>
+
+      <!-- Interest in Ferry Careers -->
+      <fieldset>
+        <legend>2. Interest in Ferry Careers</legend>
+        <p>Select areas of interest:</p>
+        <div class="checkbox-group">
+          <input type="checkbox" id="onboard" name="interest[]" value="Onboard Operations">
+          <label for="onboard">Onboard Operations</label>
+          <input type="checkbox" id="deck" name="interest[]" value="Deck and Technical Crew">
+          <label for="deck">Deck & Technical Crew</label>
+          <input type="checkbox" id="support" name="interest[]" value="Support Roles">
+          <label for="support">Support Roles</label>
+          <input type="checkbox" id="hospitality" name="interest[]" value="Hospitality and Entertainment">
+          <label for="hospitality">Hospitality & Entertainment</label>
+        </div>
+        <p>Why are you interested in working on a ferry?</p>
+        <div class="checkbox-group">
+          <input type="checkbox" id="love_sea" name="reason[]" value="Love for travel and the sea">
+          <label for="love_sea">Love for travel and the sea</label>
+          <input type="checkbox" id="customer_service" name="reason[]" value="Customer service passion">
+          <label for="customer_service">Customer Service</label>
+          <input type="checkbox" id="engineering" name="reason[]" value="Technical interest">
+          <label for="engineering">Engineering Interest</label>
+          <input type="checkbox" id="dynamic" name="reason[]" value="Dynamic environment">
+          <label for="dynamic">Dynamic Work</label>
+          <input type="checkbox" id="other_reason" name="reason[]" value="Other">
+          <label for="other_reason">Other</label>
+        </div>
+        <input type="text" name="other_reason_text" placeholder="Other reason...">
+      </fieldset>
+
+      <!-- Skills and Experience -->
+      <fieldset>
+        <legend>3. Skills and Experience</legend>
+        <p>Prior industry experience:</p>
+        <div class="checkbox-group">
+          <input type="checkbox" id="maritime" name="experience[]" value="Maritime">
+          <label for="maritime">Maritime</label>
+          <input type="checkbox" id="hospitality_exp" name="experience[]" value="Hospitality">
+          <label for="hospitality_exp">Hospitality</label>
+          <input type="checkbox" id="engineering_exp" name="experience[]" value="Engineering/Technical">
+          <label for="engineering_exp">Engineering</label>
+          <input type="checkbox" id="entertainment" name="experience[]" value="Entertainment">
+          <label for="entertainment">Entertainment</label>
+          <input type="checkbox" id="cust_service" name="experience[]" value="Customer Service">
+          <label for="cust_service">Customer Service</label>
+          <input type="checkbox" id="none_exp" name="experience[]" value="None">
+          <label for="none_exp">None</label>
+        </div>
+        <p>Qualifications/Certifications:</p>
+        <div class="checkbox-group">
+          <input type="checkbox" id="stcw" name="certifications[]" value="STCW">
+          <label for="stcw">STCW</label>
+          <input type="checkbox" id="hospitality_diploma" name="certifications[]" value="Hospitality Diploma">
+          <label for="hospitality_diploma">Hospitality Diploma</label>
+          <input type="checkbox" id="engineering_degree" name="certifications[]" value="Engineering Degree">
+          <label for="engineering_degree">Engineering Degree</label>
+          <input type="checkbox" id="other_cert" name="certifications[]" value="Other">
+          <label for="other_cert">Other</label>
+        </div>
+        <input type="text" name="other_cert_text" placeholder="Other certification...">
+      </fieldset>
+
+      <!-- Career Preferences -->
+      <fieldset>
+        <legend>4. Career Preferences</legend>
+        <p>Preferred work environment:</p>
+        <div class="checkbox-group">
+          <input type="checkbox" id="fast_paced" name="work_env[]" value="Fast-paced">
+          <label for="fast_paced">Fast-paced</label>
+          <input type="checkbox" id="technical" name="work_env[]" value="Technical">
+          <label for="technical">Technical</label>
+          <input type="checkbox" id="creative" name="work_env[]" value="Creative">
+          <label for="creative">Creative</label>
+          <input type="checkbox" id="admin" name="work_env[]" value="Administrative">
+          <label for="admin">Administrative</label>
+        </div>
+        <label>Preferred contract type:
+          <select name="contract">
+            <option>Full-time</option>
+            <option>Part-time</option>
+            <option>Seasonal</option>
+          </select>
+        </label>
+        <label>Expected salary range:
+          <select name="salary">
+            <option>€1,200–€2,000/month</option>
+            <option>€2,000–€4,000/month</option>
+            <option>€4,000–€6,000/month</option>
+            <option>€6,000+/month</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <!-- Additional Information -->
+      <fieldset>
+        <legend>5. Additional Information</legend>
+        <p>Willing to relocate?</p>
+        <div class="checkbox-group">
+          <input type="radio" id="relocate_yes" name="relocate" value="Yes">
+          <label for="relocate_yes">Yes</label>
+          <input type="radio" id="relocate_no" name="relocate" value="No">
+          <label for="relocate_no">No</label>
+        </div>
+        <p>How did you hear about this?</p>
+        <div class="checkbox-group">
+          <input type="checkbox" id="job_boards" name="source[]" value="Job boards">
+          <label for="job_boards">Job Boards</label>
+          <input type="checkbox" id="career_fairs" name="source[]" value="Career fairs">
+          <label for="career_fairs">Career Fairs</label>
+          <input type="checkbox" id="word_mouth" name="source[]" value="Word of mouth">
+          <label for="word_mouth">Word of Mouth</label>
+          <input type="checkbox" id="source_other" name="source[]" value="Other">
+          <label for="source_other">Other</label>
+        </div>
+        <input type="text" name="other_source" placeholder="Other source...">
+        <label>Additional Comments:
+          <textarea name="comments" rows="4" placeholder="Type here..."></textarea>
+        </label>
+      </fieldset>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+  <script>
+    document.getElementById("applicationForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  alert("Thank you! Your application has been submitted.");
+});
+
+  </script>
+  <footer>
+    <p>&copy;2025 aquatic ride. All Rights Reserved.</p>
+    <p> Contacts:</p>
+    <p>+46123456789</p>
+</footer>    
+</body>
+</html>
